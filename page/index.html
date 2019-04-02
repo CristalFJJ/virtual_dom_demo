@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+<script src="../diff/element.js"></script>
+<script src="../diff/diff.js"></script>
+<script src="../diff/patch.js"></script>
+<script src="./index.js"></script>
+</html>
+
+<!-- DOM—diff模拟 
+    1、用js对象模拟DOM（虚拟DOM）；
+    2、把此虚拟DOM转成真实DOM并插入页面中（render）；
+    3、如果有事件发生修改了虚拟DOM，比较两棵虚拟DOM树的差异，得到差异对象（diff）；
+    4、把差异对象应用到真实的DOM树上（patch）;
+-->
